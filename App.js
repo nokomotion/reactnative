@@ -26,8 +26,15 @@ const App = () => {
         />
 
         <View style={{height:30}}/>
-        <Text>Kilometros:</Text>
-
+        <Text>Correo:</Text>
+        <TextInput
+          value={kilometros} keyboardType='numeric'
+          onChangeText={(kilometros) => setkilometros(kilometros)}
+          placeholder={'Ingresa los kilometros'}
+          style={estilo.input}
+        />
+            <View style={{height:30}}/>
+            <Text>Kilometros:</Text>
          <TextInput
           value={kilometros} keyboardType='numeric'
           onChangeText={(kilometros) => setkilometros(kilometros)}
@@ -36,7 +43,7 @@ const App = () => {
         />
       <Button
         title="suma"
-        onPress={() => Alert.alert(1+2)}
+        onPress={() => Alert.alert()}
       />
         <Text style={{color: 'blue'}}>{kilometros}</Text>
       </View>
