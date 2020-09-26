@@ -7,6 +7,7 @@ const image = { uri: "https://reactjs.org/logo-og.png" };
 const App = () => {
   const [name, setName] = useState('');
   const [kilometros, setkilometros] = useState('');
+  const [correo, setcorreo] = useState('');
 
   return (
       <View style={estilo.container}>
@@ -26,11 +27,12 @@ const App = () => {
         />
 
         <View style={{height:30}}/>
+
         <Text>Correo:</Text>
         <TextInput
-          value={kilometros} keyboardType='numeric'
-          onChangeText={(kilometros) => setkilometros(kilometros)}
-          placeholder={'Ingresa los kilometros'}
+          value={correo} 
+          onChangeText={(correo) => setcorreo(correo)}
+          placeholder={'Ingresa tu correo'}
           style={estilo.input}
         />
             <View style={{height:30}}/>
